@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -22,11 +23,12 @@ export default function Home() {
               placeholder="Interests (Optional)"
               className="outline-none bg-white py-2 px-2 border border-black/20 rounded-md"
             />
-            <button
-              className="bg-blue-900 font-medium py-2 text-sm text-white rounded-md"
+            <Link 
+              href={`/room`}
+              className="bg-blue-900 text-center font-medium py-2 text-sm text-white rounded-md"
             >
               Start Chat
-            </button>
+            </Link>
           </div>
         </div>
       </section>
